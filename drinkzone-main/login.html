@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login / Registro - DrinkZone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">DrinkZone</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="login.html" class="active">Login</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth-grid">
+    <section class="card auth-card">
+      <h2>Entrar</h2>
+      <form id="form-login">
+        <input id="login-email" type="email" placeholder="Email" required />
+        <input id="login-senha" type="password" placeholder="Senha" required />
+        <button class="btn primary" type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <section class="card auth-card">
+      <h2>Cadastrar</h2>
+      <form id="form-registro">
+        <input id="reg-nome" type="text" placeholder="Nome completo" required />
+        <input id="reg-email" type="email" placeholder="Email" required />
+        <input id="reg-senha" type="password" placeholder="Senha" required />
+        <button class="btn" type="submit">Registrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 DrinkZone - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

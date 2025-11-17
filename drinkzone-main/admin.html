@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - DrinkZone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">DrinkZone</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="admin.html" class="active">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container admin-container">
+    <h1>Painel Administrativo</h1>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="produtos">Produtos</button>
+      <button class="tab-btn" data-tab="usuarios">Usuários</button>
+      <button class="tab-btn" data-tab="pedidos">Pedidos</button>
+      <button id="logout-btn" class="btn ghost" style="margin-left:auto;">Logout</button>
+    </div>
+
+    <section id="tab-produtos" class="tab active">
+      <div class="card">
+        <h3>Gerenciar Produtos</h3>
+        <form id="produto-form" class="form-inline">
+          <input id="prod-id" type="hidden"/>
+          <input id="prod-nome" placeholder="Nome do produto" required/>
+          <input id="prod-preco" placeholder="Preço (ex: 9.90)" required/>
+          <input id="prod-img" placeholder="Caminho da imagem (ex: img/arquivo.webp)" />
+          <button class="btn primary" type="submit">Salvar</button>
+        </form>
+
+        <div id="produtos-list" class="list"></div>
+      </div>
+    </section>
+
+    <section id="tab-usuarios" class="tab">
+      <div class="card">
+        <h3>Usuários</h3>
+        <div id="usuarios-list" class="list"></div>
+      </div>
+    </section>
+
+    <section id="tab-pedidos" class="tab">
+      <div class="card">
+        <h3>Pedidos</h3>
+        <div id="pedidos-list" class="list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 DrinkZone - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

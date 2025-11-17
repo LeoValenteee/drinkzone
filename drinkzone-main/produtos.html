@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produtos - DrinkZone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">DrinkZone</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html" class="active">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-row">
+      <input id="busca" type="search" placeholder="Buscar produto, ex: 'Licor'" />
+      <select id="filtro-preco">
+        <option value="all">Todos os preços</option>
+        <option value="low">Até R$10</option>
+        <option value="mid">R$10 - R$80</option>
+        <option value="high">Acima de R$80</option>
+      </select>
+    </section>
+
+    <section id="lista-produtos" class="cards-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 DrinkZone - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

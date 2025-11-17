@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DrinkZone - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">DrinkZone</a>
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Sua bebida favorita em um clique</h1>
+          <p>Encontre destilados, cervejas, sucos e drinks prontos com entrega rápida.</p>
+          <a class="btn primary" href="produtos.html">Ver produtos</a>
+        </div>
+        <div class="hero-image">
+          <img src="img/LogoLoja.png" alt="Copo com bebida">
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-destaques">
+      <div class="section-head">
+        <h2>Produtos em destaque</h2>
+        <a class="btn ghost" href="produtos.html">Ver todos</a>
+      </div>
+      <div id="cards-destaque" class="cards-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 DrinkZone - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

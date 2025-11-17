@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carrinho - DrinkZone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">DrinkZone</a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="carrinho.html" class="active">Carrinho</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Seu Carrinho</h2>
+
+    <section id="carrinho-list" class="cart-list"></section>
+
+    <div class="cart-footer">
+      <div id="carrinho-total" class="cart-total">Total: R$ 0,00</div>
+      <button id="btn-finalizar" class="btn primary">Finalizar pedido</button>
+    </div>
+
+    <section class="checkout-form" id="checkout-form" style="display:none;">
+      <h3>Finalizar Pedido</h3>
+      <form id="finalizar-form">
+        <input id="nome-cliente" placeholder="Nome completo" required />
+        <input id="endereco-cliente" placeholder="Endereço de entrega" required />
+        <button class="btn primary" type="submit">Confirmar pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 DrinkZone - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
