@@ -13,7 +13,7 @@ utilizando apenas tecnologias básicas e LocalStorage.
 - Login e registro
 - Controle de sessão
 - Painel administrativo (CRUD completo)
-- Relatórios dinâmicos (produtos, usuários e pedidos)
+- Relatórios (produtos, usuários e pedidos)
 
 ## 🗂 Estrutura
 css/
